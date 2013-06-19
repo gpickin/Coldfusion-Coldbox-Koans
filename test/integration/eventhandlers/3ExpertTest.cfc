@@ -23,21 +23,52 @@ Description :
 
 
 
-	<cffunction name="testHowToRelocateInColdBox" returntype="void" output="false">
+	<cffunction name="testMakeANewHandler" returntype="void" output="false">
 		<cfscript>
 		var event = "";
 		
-		// We are going to execute an Event called main.doSomething
-		// Then we are going to test to see if that event relocates to main.index
-		// Add the coldbox syntax for relocation to main.index into the main handler in the doSomething method.
+		// We are going to execute an Event called experteventhandler
+		// Make a new Handler and Method to catch this event and set a variable rc.welcomeMessage to "919643641"
 		
 		event = execute("experteventhandler");
 		debug(event.getCollection());
-		//Do your asserts below for setnextevent you can test for a setnextevent boolean flag
-		assertEquals("main.index", event.getValue("setnextevent",""), "Relocation Test - Add the coldbox syntax for relocation to main.index");
+		//Do your asserts below
+		assertEquals("919643641", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler event and set a variable rc.welcomeMessage to 919643641");
 		</cfscript>
 	</cffunction>
 
+	
+	
+	<cffunction name="testMakeANewHandlerAction" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// We are going to execute an Event called experteventhandler.mysecondaction
+		// Make a new Handler and Method to catch this event and set a variable rc.welcomeMessage to "ThisIsEasy"
+		
+		event = execute("experteventhandler.mysecondaction");
+		debug(event.getCollection());
+		//Do your asserts below
+		assertEquals("919643641", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler.mysecondaction event and set a variable rc.welcomeMessage to ThisIsEasy");
+		</cfscript>
+	</cffunction>
+	
+	
+	<cffunction name="testMakeANewViewFile" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// Make a new view file so our function that uses the view experteventhandler/buildaview works
+		
+		
+		event = execute("advancedeventhandler.viewExists");
+		var prc = event.getCollection(private=true);
+		debug(prc);
+		//Do your asserts below
+		assertEquals("919643641", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler.mysecondaction event and set a variable rc.welcomeMessage to ThisIsEasy");
+		</cfscript>
+	</cffunction>
+	
 	
 	<!---
 	<cffunction name="testindex" returntype="void" output="false">

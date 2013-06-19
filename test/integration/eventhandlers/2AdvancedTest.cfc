@@ -105,6 +105,60 @@ Description :
 	
 	
 	
+	
+	<cffunction name="testWhereIsMyView4" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// We are going to execute an Event called advancedeventhandler.whereismyview4
+		// Find the corresponding Event Handler, and the method, and set the content of the view for that method to "6161891941".
+		
+		event = execute("advancedeventhandler.whereismyview4");
+		var prc = event.getCollection(private=true);
+		debug(event.getCollection());
+		//Do your asserts below for setnextevent you can test for a setnextevent boolean flag
+		
+		assertEquals("6161891941", prc.cbox_renderdata.data, "For the event advancedeventhandler.whereismyview4 find the corresponding Event Handler, and the method, and set the content of the view for that method to 6161891941");
+		</cfscript>
+	</cffunction>
+	
+	
+	<cffunction name="testFixMyLayoutforWelcome" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// We are going to execute an Event called advancedeventhandler.welcome for logged in users
+		// Find the corresponding Event Handler, and the method, and set the layout to use Admin.cfm not Main.cfm
+		// Hint, it is the setLayout function.
+		
+		event = execute("advancedeventhandler.welcome");
+		debug(event.getCollection());
+		//Do your asserts below for setnextevent you can test for a setnextevent boolean flag
+		var prc = event.getCollection(private=true);
+		assertEquals("Admin.cfm", prc.currentLayout, "Set the Layout to the Admin.cfm layout file");
+		</cfscript>
+	</cffunction>
+	
+	
+	
+	<cffunction name="testFixMyLayoutforLoginError" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// We are going to execute an Event called advancedeventhandler.loginError for errors
+		// Find the corresponding Event Handler, and the method, and set the layout to use Admin.cfm not Main.cfm
+		// Hint, edit the setView function, and add an argument to set the layout at the same time you set the view.
+		
+		event = execute("advancedeventhandler.loginError");
+		debug(event.getCollection());
+		//Do your asserts below for setnextevent you can test for a setnextevent boolean flag
+		var prc = event.getCollection(private=true);
+		assertEquals("Error.cfm", prc.currentLayout, "Set the Layout to the Error.cfm layout file");
+		</cfscript>
+	</cffunction>
+	
+	
+	
 	<cffunction name="testHowToRelocateInColdBox" returntype="void" output="false">
 		<cfscript>
 		var event = "";
@@ -157,6 +211,8 @@ Description :
 		assertEquals("advancedeventhandler.loginError", event.getValue("setnextevent",""), "Relocation Test - Add the coldbox syntax for relocation to advancedeventhandler.loginError for a Bad Login");
 		</cfscript>
 	</cffunction>
+	
+	
 	
 	<!---
 	<cffunction name="testindex" returntype="void" output="false">

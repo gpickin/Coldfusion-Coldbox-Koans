@@ -25,14 +25,31 @@ component{
 		
 	}	
 	
+	function whereismyview4(event,rc,prc){
+		event.renderData(type="html", data=renderView("advancedeventhandler/index"));
+		
+	}	
+	
+	
+	function doSomething(event,rc,prc){
+		
+		
+	}
+
+	function viewExists(event,rc,prc){
+		event.renderData(type="html", data=renderView("experteventhandler/buildaview"));
+
+	}	
+	
 	function welcome(event,rc,prc){
 		rc.theMessage = "Welcome Back";	
+		
 		
 	}	
 	
 	function loginError(event,rc,prc){
 		rc.theMessage = "Error Logging In";	
-		
+		event.setView(view="advancedeventhandler/loginerror",layout="Main");
 	}	
 	
 	function login(event,rc,prc){
@@ -50,5 +67,11 @@ component{
 		
 		
 	}	
+	
+	
+	
+	
+	
+	
 	
 }
