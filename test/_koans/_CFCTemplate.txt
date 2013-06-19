@@ -1,0 +1,17 @@
+<cfcomponent extends="coldbox.system.testing.BaseTestCase">
+	
+	<cfset __ = "">
+	
+	|||THEANSWER|||
+	
+	
+	<cffunction name="cbkAssertEquals" returntype="any" output="false" access="private">
+		<cfargument name="var1" required="true">
+		<cfargument name="var2" required="true">
+		<cfargument name="explanation" required="true">
+		
+		<cfreturn assertTrue(hash(ucase(var1)) is var2, explanation)>
+	</cffunction>
+			
+	
+</cfcomponent>
