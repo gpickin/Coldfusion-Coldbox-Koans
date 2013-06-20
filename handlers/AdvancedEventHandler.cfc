@@ -36,10 +36,7 @@ component{
 		
 	}
 
-	function viewExists(event,rc,prc){
-		event.renderData(type="html", data=renderView("experteventhandler/buildaview"));
-
-	}	
+	
 	
 	function welcome(event,rc,prc){
 		rc.theMessage = "Welcome Back";	

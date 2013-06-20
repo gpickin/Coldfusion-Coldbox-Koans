@@ -54,20 +54,7 @@ Description :
 	</cffunction>
 	
 	
-	<cffunction name="testMakeANewViewFile" returntype="void" output="false">
-		<cfscript>
-		var event = "";
-		
-		// Make a new view file so our function that uses the view experteventhandler/buildaview works
-		
-		
-		event = execute("advancedeventhandler.viewExists");
-		var prc = event.getCollection(private=true);
-		debug(prc);
-		//Do your asserts below
-		assertEquals("919643641", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler.mysecondaction event and set a variable rc.welcomeMessage to ThisIsEasy");
-		</cfscript>
-	</cffunction>
+	
 	
 	
 	<!---

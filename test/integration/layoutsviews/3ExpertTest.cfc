@@ -21,7 +21,37 @@ Description :
 	</cffunction>
 
 
-
+	<cffunction name="testMakeANewViewFile" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// Make a new view file so our function that uses the view expertlayoutsviews/buildaview works
+		// Add 615198711631 somewhere in the view, to verify
+		
+		
+		event = execute("expertlayoutsviews.viewExists");
+		var prc = event.getCollection(private=true);
+		debug(prc);
+		//Do your asserts below
+		assertTrue(findNoCase("615198711631", prc.cbox_renderdata.data), "Make a new view file so our function that uses the view expertlayoutsviews/buildaview works. Add 615198711631 somewhere in the view, to verify");
+		</cfscript>
+	</cffunction>
 	
 	
+	
+	<cffunction name="testMakeANewLayoutFile" returntype="void" output="false">
+		<cfscript>
+		var event = "";
+		
+		// Make a new view file so our function that uses the view expertlayoutsviews/buildalayout works
+		// Add 13216519863 somewhere in the Layout, to verify
+		
+		
+		event = execute("expertlayoutsviews.viewExists");
+		var prc = event.getCollection(private=true);
+		debug(prc);
+		//Do your asserts below
+		assertTrue(findNoCase("13216519863", prc.cbox_renderdata.data), "Make a new view file so our function that uses the view expertlayoutsviews/buildalayout works. Add 13216519863 somewhere in the Layout, to verify");
+		</cfscript>
+	</cffunction>
 </cfcomponent>
