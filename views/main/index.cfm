@@ -19,7 +19,7 @@
 
 
 		<section id="eventHandlers">
-		<div class="page-header">
+		<div class="page-header well">
 			<h2>
 				Getting Started in the Coldbox Koans
 			</h2>
@@ -54,27 +54,40 @@
 				This is where you have to navigate the Coldbox app, create new handlers, actions, and views, to make the tests pass.</li>
 			</ol></p>
 			
-			<p>This project is new, and will hopefully get more material as more Coldbox team members and community members get involved.
+			
+			<h3>Start Now - Select a Section Below</h3>
 			
 			<ul class="nav nav-list">
-					<li><a href="test/_koans/TestSuiteEventHandlers.cfm"><i class="icon-bookmark"></i> Event Handlers</a></li>
-					<li><a href="test/_koans/TestSuiteLayoutsViews.cfm"><i class="icon-bookmark"></i> Layouts & Views</a></li>
+					<li><a href="test/_koans/TestSuiteEventHandlers.cfm"><i class="icon-play"></i> Event Handlers</a></li>
+					<li><a href="test/_koans/TestSuiteLayoutsViews.cfm"><i class="icon-play"></i> Layouts & Views</a></li>
 					<!---<li><a href="test/_koans/TestSuiteRequestContext.cfm"><i class="icon-bookmark"></i> Request Context</a></li>--->
 					<!---<li><a href="test/_koans/TestSuiteURLMappings.cfm"><i class="icon-bookmark"></i> URL Mappings</a></li>
 					<li><a href="test/_koans/TestSuiteFormValidation.cfm"><i class="icon-bookmark"></i> Form-Object Validation</a></li>--->
-				</ul>
+			</ul>
+			
+			<div>&nbsp;</div>
+			<h4>Koans that are Coming Soon</h4>
+			
+			<p>This project is still new, but we have ideas for more koans, including, but not limited to the following:</p>
+			<ul>
+				<li>Dependency Injection Koan</li>
+				<li>Caching Koan</li>
+				<li>Logging Koan</li>
+			</ul>
+			<p>We are also planning on making the Expert Examples actually help you build an application, so when you are done, you have a small working app, with
+			Model View Controllers (handlers) DAO Logging and Caching.</p>
+			
+			<p>If you would like to contribute to the project, please talk to Gavin on Twitter @gpickin so we can coordinate work, and make this 
+			a successful project.</p>
 			
 		</div>
-		<!---<p>
-			You can click on the following event handlers to execute their default action
-			<span class="label label-important">index()</span>
-		</p>
-		<ul>
-			<cfloop list="#getSetting("RegisteredHandlers")#" index="handler">
-			<li><a href="#event.buildLink(handler)#">#handler#</a></li>
-			</cfloop>
-		</ul>--->
+		
 		</section>
+
+
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
 
 
 		<section id="eventHandlers">

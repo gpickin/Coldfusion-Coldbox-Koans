@@ -11,13 +11,13 @@
 	#chr(60)#cfset answer3417 = "#hash(ucase("main.index"))#"#chr(62)#
 	#chr(60)#cfset answer7496 = "#hash(ucase("users"))#"#chr(62)#
 	#chr(60)#cfset answer9819 = "#hash(ucase("prehandler"))#"#chr(62)#
-	#chr(60)#cfset answer3491 = "#hash(ucase("runevent"))#"#chr(62)#
+	#chr(60)#cfset answer3499 = "#hash(ucase("runevent"))#"#chr(62)#
 	#chr(60)#cfset answer8934 = "#hash(ucase("around"))#"#chr(62)#
 	#chr(60)#cfset answer3491 = "#hash(ucase("users.list"))#"#chr(62)#
 	#chr(60)#cfset answer1687 = "#hash(ucase("on"))#"#chr(62)#
 	#chr(60)#cfset answer7713 = "#hash(ucase("event,rc,prc"))#"#chr(62)#
 	#chr(60)#cfset answer6497 = "#hash(ucase("team.list"))#"#chr(62)#
-	#chr(60)#cfset answer7649 = "#hash(ucase("allowedMethods"))#"#chr(62)#
+	#chr(60)#cfset answer7649 = "#hash(ucase("this.allowedMethods"))#"#chr(62)#
 	
 	
 	<!--- Layouts Views Basic Test Top Secret Answers - Dont Cheat --->

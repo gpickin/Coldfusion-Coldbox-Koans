@@ -65,9 +65,27 @@ component{
 		
 	}	
 	
+	function executeAnotherEvent(event,rc,prc){
+	// execute the public event advancedeventhandler.publicSecret
+		
+	}	
 	
+	function executeAnotherEventPrivate(event,rc,prc){
+	// execute the private event advancedeventhandler.privateSecret
+		
+	}	
 	
+	function publicSecret(event,rc,prc){
+			
+				prc.BestCompanion = "Rose";
+			
+		}
 	
+	private function privateSecret(event,rc,prc){
+			
+				prc.OldestFriend = "Jack";
+			
+		}
 	
 	
 	

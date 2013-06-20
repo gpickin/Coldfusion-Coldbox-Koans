@@ -49,7 +49,7 @@ Description :
 		event = execute("experteventhandler.mysecondaction");
 		debug(event.getCollection());
 		//Do your asserts below
-		assertEquals("919643641", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler.mysecondaction event and set a variable rc.welcomeMessage to ThisIsEasy");
+		assertEquals("ThisIsEasy", event.getValue("welcomeMessage",""), "Make a new Handler and Method to catch the experteventhandler.mysecondaction event and set a variable rc.welcomeMessage to ThisIsEasy");
 		</cfscript>
 	</cffunction>
 	

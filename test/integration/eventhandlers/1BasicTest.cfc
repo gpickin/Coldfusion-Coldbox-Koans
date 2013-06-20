@@ -119,7 +119,7 @@ Description :
 	
 	
 	
-	<cffunction name="testWhat3ArguentsDoActionsReceieve" returntype="void" output="false">
+	<cffunction name="testWhat3ArgumentsDoActionsReceieve" returntype="void" output="false">
 		<cfscript>
 		// Each action in your Event Handler Receive 3 arguments.
 		// What are they?
@@ -137,7 +137,7 @@ Description :
 		// Every Public Method in your Event Handler can be called via Handler.Action via URL etc.
 		// Private methods can only be called inside the application using what method name? 
 		
-		cbkAssertEquals(__, answer3491, "Private methods can only be called inside the application using what method name? ");
+		cbkAssertEquals(__, answer3499, "Private methods can only be called inside the application using what method name? ");
 			
 		</cfscript>
 	</cffunction>
@@ -161,8 +161,9 @@ Description :
 		// Caching is an important part of ColdBox, to provide you with optimal performance.
 		// To set caching at the component declaration, what would you add to your declaration to not cache this handler
 		// component {youranswer} {}
+		// Hint - xxxxx=yyyyy no spaces and no quotes
 		
-		cbkAssertEquals(__, answer9313, "To set caching at the component declaration, what would you add to your declaration - component {youranswer} {}");
+		cbkAssertEquals(__, answer9313, "To set caching at the component declaration, what would you add to your declaration - component {youranswer} {} - Hint - xxxxx=yyyyy no spaces and no quotes");
 			
 		</cfscript>
 	</cffunction>
@@ -175,6 +176,7 @@ Description :
 		// Each event handler can also exhibit several feature properties that can be tuned to alter the behavior of the local AOP interception points,
 		// event caching and HTTP method security. 
 		// What structure would you add to your handler to restrict HTTP methods to given actions
+		
 		
 		cbkAssertEquals(__, answer7649, "What structure would you add to your handler to restrict HTTP methods to given actions");
 			

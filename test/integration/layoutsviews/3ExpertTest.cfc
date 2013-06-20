@@ -25,7 +25,7 @@ Description :
 		<cfscript>
 		var event = "";
 		
-		// Make a new view file so our function that uses the view expertlayoutsviews/buildaview works
+		// Make a new view file so our function that uses the view expertlayoutsviews/viewExists works
 		// Add 615198711631 somewhere in the view, to verify
 		
 		
@@ -33,7 +33,7 @@ Description :
 		var prc = event.getCollection(private=true);
 		debug(prc);
 		//Do your asserts below
-		assertTrue(findNoCase("615198711631", prc.cbox_renderdata.data), "Make a new view file so our function that uses the view expertlayoutsviews/buildaview works. Add 615198711631 somewhere in the view, to verify");
+		assertTrue(findNoCase("615198711631", prc.cbox_renderdata.data), "Make a new view file so our function that uses the view expertlayoutsviews/viewExists works. Add 615198711631 somewhere in the view, to verify");
 		</cfscript>
 	</cffunction>
 	
