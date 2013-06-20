@@ -59,7 +59,7 @@
 			<ul class="nav nav-list">
 					<li><a href="test/_koans/TestSuiteEventHandlers.cfm"><i class="icon-bookmark"></i> Event Handlers</a></li>
 					<li><a href="test/_koans/TestSuiteLayoutsViews.cfm"><i class="icon-bookmark"></i> Layouts & Views</a></li>
-					<li><a href="test/_koans/TestSuiteRequestContext.cfm"><i class="icon-bookmark"></i> Request Context</a></li>
+					<!---<li><a href="test/_koans/TestSuiteRequestContext.cfm"><i class="icon-bookmark"></i> Request Context</a></li>--->
 					<!---<li><a href="test/_koans/TestSuiteURLMappings.cfm"><i class="icon-bookmark"></i> URL Mappings</a></li>
 					<li><a href="test/_koans/TestSuiteFormValidation.cfm"><i class="icon-bookmark"></i> Form-Object Validation</a></li>--->
 				</ul>

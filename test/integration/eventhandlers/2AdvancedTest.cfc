@@ -106,21 +106,7 @@ Description :
 	
 	
 	
-	<cffunction name="testWhereIsMyView4" returntype="void" output="false">
-		<cfscript>
-		var event = "";
-		
-		// We are going to execute an Event called advancedeventhandler.whereismyview4
-		// Find the corresponding Event Handler, and the method, and set the content of the view for that method to "6161891941".
-		
-		event = execute("advancedeventhandler.whereismyview4");
-		var prc = event.getCollection(private=true);
-		debug(event.getCollection());
-		//Do your asserts below for setnextevent you can test for a setnextevent boolean flag
-		
-		assertEquals("6161891941", prc.cbox_renderdata.data, "For the event advancedeventhandler.whereismyview4 find the corresponding Event Handler, and the method, and set the content of the view for that method to 6161891941");
-		</cfscript>
-	</cffunction>
+	
 	
 	
 	<cffunction name="testFixMyLayoutforWelcome" returntype="void" output="false">
@@ -211,25 +197,16 @@ Description :
 		assertEquals("advancedeventhandler.loginError", event.getValue("setnextevent",""), "Relocation Test - Add the coldbox syntax for relocation to advancedeventhandler.loginError for a Bad Login");
 		</cfscript>
 	</cffunction>
-	
-	
-	
-	<!---
-	<cffunction name="testindex" returntype="void" output="false">
-		<cfscript>
-		var event = "";
-		
-		//Place any variables on the form or URL scope to test the handler.
-		//URL.name = "luis"
-		event = execute("general.index");
-		
-		debug(event.getCollection());
-		
-		//Do your asserts below
-		assertEquals(1, 1, "You must create the registered event to Pass this test");
-			
-		</cfscript>
-	</cffunction>--->
+
+
+
+
+
+
+
+
+
+
 	
 	
 </cfcomponent>
