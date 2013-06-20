@@ -56,8 +56,7 @@
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
 							 <li class="nav-header">Coldbox Koans</li>
-							 <li><a href="mailto:bugs@coldbox.org?subject=DataBoss Bug Report"><i class="icon-fire"></i> Report a Bug</a></li>
-							 <li><a href="mailto:info@coldbox.org?subject=DataBoss Feedback"><i class="icon-bullhorn"></i> Send Us Feedback</a></li>
+							 <li><a href="https://github.com/gpickin/Coldfusion-Coldbox-Koans/issues" target="_blank"><i class="icon-fire"></i> Report a ColdBox Koan Bug</a></li>
 							 <li><a href="http://www.ortussolutions.com/products/coldbox"><i class="icon-home"></i> Professional Support</a></li>
 							 <li class="centered">
 							 	<img src="../../includes/images/ColdBoxLogoSquare_125.png" alt="logo"/>
