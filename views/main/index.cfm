@@ -7,7 +7,7 @@
 		Welcome to the next generation of ColdFusion applications.  You can now start building your application with ease, we already did the hard work
 		for you.
 		<br>
-		ColdBox Koans is a Coldbox App that helps you learn about COLDBOX by making Unit Tests Page
+		ColdBox Koans is a Coldbox App that helps you learn about COLDBOX by making Unit Tests Pass
 		<a class="btn btn-primary" href="http://wiki.coldbox.org/wiki/ColdBox.cfm" target="_blank" title="Read our ColdBox Overview Document" rel="tooltip">
 			<strong>ColdBox Overview</strong>
 		</a>
